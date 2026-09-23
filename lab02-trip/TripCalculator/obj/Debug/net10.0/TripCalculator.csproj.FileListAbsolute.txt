@@ -1,0 +1,15 @@
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\bin\Debug\net10.0\TripCalculator.exe
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\bin\Debug\net10.0\TripCalculator.deps.json
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\bin\Debug\net10.0\TripCalculator.runtimeconfig.json
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\bin\Debug\net10.0\TripCalculator.dll
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\bin\Debug\net10.0\TripCalculator.pdb
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\obj\Debug\net10.0\TripCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\obj\Debug\net10.0\TripCalculator.AssemblyInfoInputs.cache
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\obj\Debug\net10.0\TripCalculator.AssemblyInfo.cs
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\obj\Debug\net10.0\TripCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\obj\Debug\net10.0\TripCalculator.sourcelink.json
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\obj\Debug\net10.0\TripCalculator.dll
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\obj\Debug\net10.0\refint\TripCalculator.dll
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\obj\Debug\net10.0\TripCalculator.pdb
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\obj\Debug\net10.0\TripCalculator.genruntimeconfig.cache
+C:\Users\Riley\CSCI 1250\lab02-trip\TripCalculator\obj\Debug\net10.0\ref\TripCalculator.dll
