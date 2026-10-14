@@ -30,8 +30,8 @@ Console.Write("What is the cost per pizza ");
 double pizzaCost = Convert.ToDouble(Console.ReadLine());
 
 //Math
-double fuelCost = fuelCost (milesForTheTrip, milesPerGallon, gasPrice);
-    
+double fuelCost = FuelCost(milesForTheTrip, milesPerGallon, gasPrice);
+  
 double totalPizza = pizzaAmount * pizzaCost;
 
 double totalCost = fuelCost + totalPizza;
@@ -73,6 +73,7 @@ for (int i = 0; i < names.Length; i++)
 //Input
 System.Console.WriteLine("=== Part 3: Who Works How Long===\n");
 for (int i = 0; i < names.Length; i++)
+{
 
 //Math
 double takeHomePay = TakeHomePay(hoursWorked[i], hourlyRates[i], taxRate);
@@ -94,14 +95,11 @@ System.Console.WriteLine($"Total take home pay: {totalTakeHome.ToString("C")}");
 System.Console.WriteLine($"Longest anyone must work: {longest.ToString("F2")}");
 
 //METHODS
-
-//FuelCost, returns the total cost of fuel
 static double FuelCost(double miles, double milesPerGallon, double pricePerGallon)
 { double gallons = miles / milesPerGallon;
 return gallons * pricePerGallon;
 }
 
-//TakeHomePay, returns your net pay (gross pay minus the taxes withheld)
 static double TakeHomePay(double hours, double hourlyRate, double taxRate)
 { 
 double grossPay = hours * hourlyRate;
@@ -112,5 +110,4 @@ return grossPay - taxWithheld;
 //HoursToCover, returns the amount each individual must pay divided by the their net take home pay
 static double HoursToCover(double amountOwed, double takeHomePayPerHour)
 {   return amountOwed/takeHomePayPerHour;
-}
-
+}}
