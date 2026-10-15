@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TripCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2054fb738f93332b432327090b47d3f0270f1c79")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da3999baef8ff8274cc18bd47b2e92b552d93ba5")]
 [assembly: System.Reflection.AssemblyProductAttribute("TripCalculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TripCalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
