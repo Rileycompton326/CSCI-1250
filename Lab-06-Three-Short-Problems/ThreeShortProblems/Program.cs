@@ -63,6 +63,7 @@ if (gradeNum >= 0 && gradeNum <= 100)
 gradeNum = Convert.ToInt32(gradeNum);
 validInput = true;
 
+//choice 1
 if(gradeNum >= 90)
 {
 gradeLetter = 'A';
@@ -98,6 +99,7 @@ System.Console.WriteLine("A score must be between 0 and 100.");
 }
 }
 
+//choice 2
 if(choice == choiceTwo || choice == choiceAll)
 {
 char rollAgain = 'y';
@@ -144,7 +146,7 @@ rollAgain = Console.ReadLine()![0];
 System.Console.WriteLine($"You rolled {rollAmount} times and won {wonAmount}.");
 }
     
-
+//cjoice 3
 if(choice == choiceThree || choice == choiceAll)
 {
 int[] scoreValues = new int[5];
