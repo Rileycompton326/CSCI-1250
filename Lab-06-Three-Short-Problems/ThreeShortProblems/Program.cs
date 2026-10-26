@@ -9,22 +9,21 @@
 */
 using System.Runtime.CompilerServices;
 
+//The Menu
 Random rng = new Random(4000);
 
-int choice = 0;
-
+int choice;
 const int choiceOne = 1;
 const int choiceTwo = 2;
 const int choiceThree = 3;
 const int choiceAll = 4;
 const int leaveValue = 5;
 
-
+//whole function
 do
 {
-} while (choice !=5);
-
-
+    
+//section layout info   
 Console.WriteLine("\n=== CSCI 1250 Lab 06 ===");
 System.Console.WriteLine("1. The Grade Checker");
 System.Console.WriteLine("2. The Dice Table");
@@ -32,38 +31,43 @@ System.Console.WriteLine("3. The Score Report");
 System.Console.WriteLine("4. All three");
 System.Console.WriteLine("5. Quit");
 
-System.Console.Write("Choose 1 through 5: ");
+//choice
+System.Console.Write("Choose an integer 1-5: ");
 choice = Convert.ToInt32(Console.ReadLine());
 
+//pick again if out of scope
 while (choice < choiceOne || choice > leaveValue)
 {
-     System.Console.WriteLine("Choose a number from 1 to 5.");
-    System.Console.Write("Choose 1 through 5: ");
+    System.Console.WriteLine("Choose an integer  1-5.");
+    System.Console.Write("Choose 1-5: ");
     choice = Convert.ToInt32(Console.ReadLine());
 }
 
 if(choice == choiceOne || choice == choiceAll)
 {
-    bool validInput = false;
-    char gradeLetter;
 
-    System.Console.WriteLine("\n=== Exercise 1: The Grade Checker ===");
+bool validInput = false;
+char gradeLetter;
 
-    while (!validInput)
-    {
+System.Console.WriteLine("\n=== Exercise 1: The Grade Checker ===");
+
+while (!validInput)
+{
 
 System.Console.Write("Score: ");
 int gradeNum = Convert.ToInt32(Console.ReadLine());
 
 if (gradeNum >= 0 && gradeNum <= 100)
- {
-gradeNum = Convert.ToInt32(gradeNum);
- validInput = true;
-if(gradeNum >= 90)
 {
 
+gradeNum = Convert.ToInt32(gradeNum);
+validInput = true;
+
+if(gradeNum >= 90)
+{
 gradeLetter = 'A';
 }
+
 else if(gradeNum >= 80)
 {
 gradeLetter = 'B';
@@ -71,46 +75,40 @@ gradeLetter = 'B';
 
 else if(gradeNum >= 70)
 {
-
 gradeLetter = 'C';
 }
 
 else if(gradeNum >= 60)
 {
-                
 gradeLetter = 'D';
 }
+
 else
 {
-               
 gradeLetter = 'F';
 }
 
 System.Console.WriteLine($"{gradeNum} earns a {gradeLetter}.");
- }
-  else
-  {
-     System.Console.WriteLine("A score must be between 0 and 100.");
-        }
+}
 
-    }
-
-
+else
+{
+System.Console.WriteLine("A score must be between 0 and 100.");
+}
+}
+}
 
 if(choice == choiceTwo || choice == choiceAll)
 {
-
 char rollAgain = 'y';
 int rollAmount = 0;
 int wonAmount = 0;
 
 System.Console.WriteLine("\n=== Exercise 2: The Dice Table ===");
 
-
 while(rollAgain != 'n')
 {
-    
-    rollAmount++;
+rollAmount++;
 
 const int snakeEyeValue = 1;
 const int diceWinSeven = 7;
@@ -133,6 +131,7 @@ else if(totalDiceAmount == diceWinSeven || totalDiceAmount == diceWinEleven)
 outcome = "A winner.";
 wonAmount++;
 }
+
 else
 {
 outcome = "";
@@ -172,6 +171,7 @@ if(score >= passingScoreMin)
 passingAmount++;
 }
 }
+
 double average = Convert.ToDouble(total)/scoreValues.Length;
 
 System.Console.WriteLine($"\nScores entered: {scoreValues.Length}");
@@ -179,12 +179,9 @@ System.Console.WriteLine($"Total: {total}");
 System.Console.WriteLine($"Average: {average}");
 System.Console.WriteLine($"Highest: {max}");
 System.Console.WriteLine($"Passing: {passingAmount} of {scoreValues.Length}");
-
-
+}
+}
 while(choice != leaveValue);
 
-Console.WriteLine("goodbye.");
-}
-}
-        
-    
+//ending
+Console.WriteLine("/nGoodbye." );
