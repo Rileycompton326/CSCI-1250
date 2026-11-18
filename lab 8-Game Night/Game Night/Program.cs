@@ -11,7 +11,7 @@ Directory.SetCurrentDirectory(projectFolder);
 // ---------- Methods ----------
 static int LeaderIndex(string[] points)
 {
-    // returns the index of the highest score
+    
     int leader = 0;
     for (int i = 1; i < points.Length; i++)
     {
@@ -45,7 +45,6 @@ static string HistoryEntry(int night, string winner, int points)
 
     Console.WriteLine("PLAYER".PadRight(11) + "POINTS");
 
-    // for: name and points live in two parallel arrays
     for (int i = 0; i < players.Length; i++)
     {
         Console.WriteLine(players[i].PadRight(11) + points[i]);
